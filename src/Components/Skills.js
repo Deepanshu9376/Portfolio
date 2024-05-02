@@ -1,11 +1,12 @@
-import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap';
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-import meter1 from '../Assests/Images/meter1.svg'
-import meter2 from '../Assests/Images/meter2.svg'
-import meter3 from '../Assests/Images/meter3.svg'
-import colorsharp from '../Assests/Images/color-sharp.png'
+
+import meter1 from "../Assests/Images/meter1.svg";
+import meter2 from "../Assests/Images/meter2.svg"
+import meter3 from "../Assests/Images/meter3.svg";
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+// import arrow1 from "../Assests/Images/arrow1.svg";
+// import arrow2 from "../Assests/Images/arrow2.svg";
+import colorSharp from "../Assests/Images/color-sharp.png"
 
 export const Skills = () => {
     const responsive = {
@@ -29,39 +30,41 @@ export const Skills = () => {
     };
 
     return (
-        <section>
-            <Container>
-                <Row>
-                    <Col>
-                        <div className='check-box'>
+        <section className="skill" id="skills">
+            <div className="container">
+                <div className="row">
+                    <div className="col-12">
+                        <div className="skill-bx wow zoomIn">
                             <h2>Skills</h2>
-                            <p>lkaskcsnalknxakslns</p>
-                            <Carousel responsive={responsive} infinite={true} className='skill-slider'>
+                            <p>I've cultivated a diverse skill set through exploration and hands-on experience. In the realm of machine learning projects, I've leveraged languages such as C++, C#, and Python. For web development endeavors, I'm proficient in JavaScript, React, and Node.js, enabling me to craft dynamic and responsive web applications. Additionally, in the domain of Android development, I've honed my skills using Kotlin and Android Studio, empowering me to create robust and user-friendly mobile applications.</p>
+                            <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
+
                                 <div className='item'>
-                                    <img src={meter1} alt='Image'></img>
-                                    <h5>Web development</h5>
+                                    <img src={meter1} alt='altImage'></img>
+                                    <h5>C++</h5>
                                 </div>
                                 <div className='item'>
-                                    <img src={meter2} alt='Image'></img>
-                                    <h5>Android development</h5>
+                                    <img src={meter2} alt='altImage'></img>
+                                    <h5>JavaScript</h5>
                                 </div>
                                 <div className='item'>
-                                    <img src={meter3} alt='Image'></img>
-                                    <h5>Game development</h5>
+                                    <img src={meter3} alt='altImage'></img>
+                                    <h5>Kotlin</h5>
                                 </div>
                                 <div className='item'>
-                                    <img src={meter1} alt='Image'></img>
-                                    <h5>IOS development</h5>
+                                    <img src={meter1} alt='altImage'></img>
+                                    <h5>C#</h5>
                                 </div>
                                 <div className='item'>
-                                    <img src={meter2} alt='Image'></img>
-                                    <h5>UI/UX development</h5>
+                                    <img src={meter2} alt='altImage'></img>
+                                    <h5>Python</h5>
                                 </div>
                             </Carousel>
                         </div>
-                    </Col>
-                </Row>
-            </Container>
+                    </div>
+                </div>
+            </div>
+            <img className="background-image-left" src={colorSharp} alt="altImage" />
         </section>
     )
 }
