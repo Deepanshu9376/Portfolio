@@ -5,15 +5,15 @@ import projImg2 from "../Assests/Images/projectimg1.png";
 import projImg3 from "../Assests/Images/todo.jpg";
 import projImg4 from "../Assests/Images/loginsignup.jpg"
 import projImg5 from "../Assests/Images/footballscore.jpg"
-import projImg6 from "../Assests/Images/newsFresh.png";
+import projImg6 from "../Assests/Images/qr_img.png";
 import projImg7 from "../Assests/Images/notes.jpg";
 import projImg8 from "../Assests/Images/memes.jpg";
 import projImg9 from "../Assests/Images/aibses.jpg";
 import projImg10 from "../Assests/Images/vehicel.png";
-import projImg11 from "../Assests/Images/drumkit.jpg"
+import projImg11 from "../Assests/Images/gaia.jpg"
 
 import colorSharp2 from "../Assests/Images/color-sharp2.png";
-// import 'animate.css';
+import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
@@ -23,31 +23,37 @@ export const Projects = () => {
       title: "Mind-Pill India",
       description: "Health Care Startup",
       imgUrl: projImg1,
+      githublink: "https://github.com/Deepanshu9376/MindPill-WebSite",
     },
     {
       title: "Quiz App",
       description: "Learning & Development",
       imgUrl: projImg2,
+      githublink: "https://github.com/Deepanshu9376/Quiz-App",
     },
     {
       title: "To-do List",
       description: "Daily to-do list",
       imgUrl: projImg3,
+      githublink: "https://github.com/Deepanshu9376/Todo-List",
     },
     {
       title: "Login Signup",
       description: "Basic Authentication",
       imgUrl: projImg4,
+      githublink: "https://github.com/Deepanshu9376/Authentication",
     },
     {
       title: "Football page",
       description: "Live scores football",
       imgUrl: projImg5,
+      githublink: "https://github.com/Deepanshu9376/Football-Page-",
     },
     {
-      title: "NewsLetter",
-      description: "Daily newsfeed",
+      title: "Qr-Code Generator",
+      description: "Generate Qr-code for anything",
       imgUrl: projImg6,
+      githublink: "https://github.com/Deepanshu9376/Qr-Code-Generator",
     },
   ];
 
@@ -56,16 +62,19 @@ export const Projects = () => {
       title: "Mind-Pill India App",
       description: "Health Care Startup",
       imgUrl: projImg1,
+      githublink: "https://github.com/Deepanshu9376/MindPill",
     },
     {
       title: "Notes App",
       description: "Daily Notes App",
       imgUrl: projImg7,
+      githublink: "https://github.com/Deepanshu9376/Notes-App",
     },
     {
       title: "MemeShare",
       description: "Daily Memes App",
       imgUrl: projImg8,
+      githublink: "https://github.com/Deepanshu9376/MemeShare",
     },
   ];
 
@@ -74,16 +83,19 @@ export const Projects = () => {
       title: "AI-Based Traffic Light Controller",
       description: "Autmoated Traffic Light Controller",
       imgUrl: projImg9,
+      githublink: "https://github.com/Deepanshu9376/AI-based-TLC",
     },
     {
       title: "Vehicle-Counter-using-OpenCv",
       description: "Vehicle Counting using open-cv",
       imgUrl: projImg10,
+      githublink: "https://github.com/Deepanshu9376/Vehicle-Counter-using-OpenCv",
     },
     {
-      title: "Drum Kit",
-      description: "Fun Musical",
+      title: "Gaia Nurture",
+      description: "Soil health for specific crop",
       imgUrl: projImg11,
+      githublink: "https://github.com/Deepanshu9376/Soil-Nutrient-Calcuator",
     },
   ];
 
