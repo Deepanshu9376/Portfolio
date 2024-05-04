@@ -6,6 +6,8 @@ import logo from '../Assests/Images/logo.svg'
 import navIcon1 from '../Assests/Images/nav-icon1.svg'
 import navIcon2 from '../Assests/Images/nav-icon2.svg'
 import navIcon3 from '../Assests/Images/nav-icon3.svg'
+import navIcon4 from '../Assests/Images/nav-icon4.svg'
+
 import { HashLink } from 'react-router-hash-link';
 import {
   BrowserRouter as Router
@@ -52,6 +54,7 @@ const NavBar = () => {
                 <a href="https://www.linkedin.com/in/deepanshu-thakur-935441200?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer"><img src={navIcon1} alt="navicon" /></a>
                 <a href="https://www.facebook.com/profile.php?id=100027633255900" target="_blank" rel="noopener noreferrer"><img src={navIcon2} alt="navicon" /></a>
                 <a href="https://www.instagram.com/_deepanshu_9376/" target="_blank" rel="noopener noreferrer"><img src={navIcon3} alt="navicon" /></a>
+                <a href="https://github.com/Deepanshu9376" target="_blank" rel="noopener noreferrer"><img src={navIcon4} alt="navicon" /></a>
               </div>
               <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>

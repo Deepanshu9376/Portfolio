@@ -276,7 +276,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(38, 40, 148, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  background: linear-gradient(90.21deg, rgba(40, 144, 175, 0.5) -5.91%, rgba(47, 168, 189, 0.5) 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
@@ -302,13 +302,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .banner button {
   color: #fff;
-  background: transparent;
+  background: linear-gradient(90.21deg, #000 -5.91%, #54c7d7 111.58%);
   font-weight: 700;
   font-size: 20px;
   margin-top: 60px;
+  margin-bottom: 30px;
   letter-spacing: 0.8px;
   display: flex;
   align-items: center;
+  padding: 12px 14px 12px 14px;
+  border-radius: 22px;
 }
 
 .banner button svg {
@@ -384,7 +387,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .skill-slider .item .circ {
-  color: #AA367C;
+  color: #54c7d7;
 }
 
 .background-image-left {

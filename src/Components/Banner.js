@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../Assests/Images/headerimg.svg";
 import TrackVisibility from 'react-on-screen';
-import 'animate.css'
+import { ArrowRightCircle } from 'react-bootstrap-icons'; // assuming you're using react-feather for icons
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
@@ -45,6 +45,12 @@ export const Banner = () => {
         }
     }
 
+    const handleDownloadResume = () => {
+        // Replace 'YOUR_GOOGLE_DRIVE_RESUME_LINK' with your actual Google Drive link
+        const googleDriveResumeLink = 'https://drive.google.com/file/d/1zKHWjG1yMLCXkvtrZaKslnyLhZUei7J9/view?usp=drive_link';
+        window.open(googleDriveResumeLink, '_blank');
+    };
+
     return (
         <section className="banner" id="home">
             <Container>
@@ -56,7 +62,7 @@ export const Banner = () => {
                                     <span className="tagline">Welcome to my Portfolio</span>
                                     <h1>{`Hi! I'm Deepanshu `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web", "Android", "AI/ML","Game"]'><span className="wrap">{text}</span>{` Developer`}</span></h1>
                                     <p>I'm Deepanshu, a passionate software engineer driven by a fervent curiosity for exploring diverse tech stacks. A 2024 graduate in ECE from Punjab University, I've assumed various roles in different companies, showcasing my versatility across multiple tech domains. My portfolio highlights my adeptness in navigating various technologies, reflecting my commitment to continuous learning and innovation in the ever-evolving landscape of software engineering.</p>
-                                    {/* <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button> */}
+                                    <button onClick={handleDownloadResume}>Download Resume <ArrowRightCircle size={25} /></button>
                                 </div>}
                         </TrackVisibility>
                     </Col>
@@ -71,5 +77,5 @@ export const Banner = () => {
                 </Row>
             </Container>
         </section>
-    )
-}
+    );
+};
