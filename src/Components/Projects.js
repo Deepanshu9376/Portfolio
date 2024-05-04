@@ -12,7 +12,7 @@ import projImg9 from "../Assests/Images/aibses.jpg";
 import projImg10 from "../Assests/Images/vehicel.png";
 import projImg11 from "../Assests/Images/gaia.jpg"
 
-import colorSharp2 from "../Assests/Images/color-sharp2.png";
+import colorSharp2 from "../Assests/Images/colorsharp.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
