@@ -40,9 +40,9 @@ export const Experience = () => {
         {
             id: 5,
             image: require('../Assests/Images/gdsc-social-share (1).png'),
-            companyName: 'Google Developer Student Club GDSC Uiet',
+            companyName: 'Google Developer Student Club Uiet',
             role: 'Android Development lead',
-            periodOfWork: 'Aug 2022 - Jan 2024',
+            periodOfWork: 'Aug 2022 - Jan 2023',
             description: 'Gain expertise in Android development using Kotlin, leveraging the power of Android Studio and Firebase. Craft robust, user-friendly mobile applications, enhancing performance and user experience by up to 90%. Benefit from mentorship by Google experts, while also imparting knowledge in Kotlin and Android development to students. Master Android Studio to build cutting-edge robotics applications.',
         },
         {
