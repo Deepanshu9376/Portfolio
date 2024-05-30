@@ -17,26 +17,27 @@ import {
 const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
+
   useEffect(() => {
-    const onScroll = () => {
+    const handleScroll = () => {
       if (window.scrollY > 50) {
-        setScrolled(true)
+        setScrolled(true);
+      } else {
+        setScrolled(false);
       }
-      else {
-        setScrolled(false)
-      }
-    }
-    window.addEventListener("scroll", onScroll)
-    return () => window.removeEventListener("scroll", onScroll)
-  }, [])
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const onUpdateActiveLink = (value) => {
-    setActiveLink(value)
-  }
+    setActiveLink(value);
+  };
 
   return (
     <Router>
-      <Navbar size={12} sm={6} xs={4} expand="md" className={scrolled ? "scrolled" : ""}>
+      <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
             <img src={logo} alt="Logo" />
@@ -56,6 +57,8 @@ const NavBar = () => {
                 <a href="https://www.instagram.com/_deepanshu_9376/" target="_blank" rel="noopener noreferrer"><img src={navIcon3} alt="navicon" /></a>
                 <a href="https://github.com/Deepanshu9376" target="_blank" rel="noopener noreferrer"><img src={navIcon4} alt="navicon" /></a>
               </div>
+            </span>
+            <span className="navbar-text2">
               <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>
               </HashLink>

@@ -1,6 +1,5 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import colorSharp from "../Assests/Images/colorsharp.svg"
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
@@ -12,7 +11,7 @@ export const Skills = () => {
         },
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
-            items: 3
+            items: 4
         },
         tablet: {
             breakpoint: { max: 1024, min: 464 },
@@ -20,7 +19,7 @@ export const Skills = () => {
         },
         mobile: {
             breakpoint: { max: 464, min: 0 },
-            items: 1
+            items: 1,
         }
     };
 
@@ -66,7 +65,7 @@ export const Skills = () => {
                     </div>
                 </div>
             </div>
-            <img className="background-image-left" src={colorSharp} alt="altImage" />
+            {/* <img className="background-image-left" src={colorSharp} alt="altImage" /> */}
         </section>
     )
 }
