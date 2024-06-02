@@ -501,6 +501,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 14px 0 75px 0;
 }
 
+@media (max-width: 450px) {
+  .skill p {
+    color: #B8B8B8;
+    font-size: 14px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px 0 75px 0;
+  }
+}
+
 .skill-slider {
   width: 80%;
   margin: 0 auto ;
@@ -554,6 +564,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 14px auto 30px auto;
   text-align: center;
   width: 90%;
+}
+
+@media (max-width: 425px) {
+  .project p {
+    color: #B8B8B8;
+    font-size: 14px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px auto 30px auto;
+    text-align: center;
+    width: 90%;
+  }
 }
 
 .project .nav.nav-pills {
@@ -810,6 +832,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 86%;
 }
 
+@media (max-width: 425px) {
+  .experience .expbx p {
+    color: #B8B8B8;
+    font-size: 14px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px auto 30px auto;
+    text-align: center;
+    width: 86%;
+  }
+  .experience .infobx .oth p {
+    font-size: 1px;
+  }
+}
 .experience .infobx .cmpnyname p {
   font-size: 45px;
 }
